@@ -20,77 +20,79 @@
   </head>
   <body>
     <div class="wrapper flex">
-      <!-- Rating state start -->
-      <div
-        id="rating-state"
-        class="rating-card flex space-between"
-        aria-hidden="false"
-      >
-        <div class="round-container">
-          <img src="/images/icon-star.svg" alt="star icon" />
-        </div>
+      <div class="rating-card flex">
+        <!-- Rating state start -->
+        <div id="rating-state" class="flex space-between" aria-hidden="false">
+          <div class="round-container">
+            <img src="/images/icon-star.svg" alt="star icon" />
+          </div>
 
-        <div class="content">
-          <h1 class="text-white">How did we do?</h1>
-          <p class="text-light-grey">
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
+          <div class="content">
+            <h1 class="text-white">How did we do?</h1>
+            <p class="text-light-grey">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating-box text-light-grey flex space-between">
+            <div
+              tabindex="1"
+              class="round-container rating-number"
+              aria-selected="false"
+            >
+              1
+            </div>
+
+            <div
+              tabindex="1"
+              class="round-container rating-number"
+              aria-selected="false"
+            >
+              2
+            </div>
+            <div
+              tabindex="1"
+              class="round-container rating-number"
+              aria-selected="false"
+            >
+              3
+            </div>
+            <div
+              tabindex="1"
+              class="round-container rating-number"
+              aria-selected="false"
+            >
+              4
+            </div>
+            <div
+              tabindex="1"
+              class="round-container rating-number"
+              aria-selected="false"
+            >
+              5
+            </div>
+          </div>
+          <button id="submit-rating" tabindex="0" class="btn-primary">
+            Submit
+          </button>
+        </div>
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+        <div id="thank-you-state" class="flex space-between" aria-hidden="true">
+          <img
+            src="/images/illustration-thank-you.svg"
+            alt="Receipt Printer Illustration"
+          />
+          <div class="text-primary rating-container">
+            You selected <span class="user-rating">4</span> out of 5
+          </div>
+          <h1 class="text-white">Thank you!</h1>
+          <p class="text-light-grey text-center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
           </p>
         </div>
-        <div class="rating-box text-light-grey flex space-between">
-          <div
-            tabindex="1"
-            class="round-container rating-number"
-            aria-selected="false"
-          >
-            1
-          </div>
-
-          <div
-            tabindex="1"
-            class="round-container rating-number"
-            aria-selected="false"
-          >
-            2
-          </div>
-          <div
-            tabindex="1"
-            class="round-container rating-number"
-            aria-selected="false"
-          >
-            3
-          </div>
-          <div
-            tabindex="1"
-            class="round-container rating-number"
-            aria-selected="false"
-          >
-            4
-          </div>
-          <div
-            tabindex="1"
-            class="round-container rating-number"
-            aria-selected="false"
-          >
-            5
-          </div>
-        </div>
-        <button id="submit-rating" tabindex="0" class="btn-primary">
-          Submit
-        </button>
-      </div>
-      <!-- Rating state end -->
-
-      <!-- Thank you state start -->
-      <div
-        id="thank-you-state"
-        class="rating-card flex space-between"
-        aria-hidden="true"
-      >
-        You selected
-        <!-- Add rating here -->
-        out of 5 Thank you! We appreciate you taking the time to give a rating.
-        If you ever need more support, don’t hesitate to get in touch!
       </div>
     </div>
     <!-- Thank you state end -->
