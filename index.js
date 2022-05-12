@@ -1,3 +1,5 @@
+let rating;
+
 document.addEventListener("DOMContentLoaded", () => {
   initializeButtons();
 });
@@ -20,6 +22,7 @@ const initalizeRatingButtons = () => {
     button.addEventListener("click", () => {
       resetButtons(ratingButtons);
       button.setAttribute("aria-selected", "true");
+      rating = button.getAttribute("data-value");
     });
   });
 };
@@ -30,6 +33,7 @@ const initalizeSubmitButton = () => {
 };
 
 const submitRating = () => {
+  if (rating < 1) return;
   let button = document.querySelector("button#submit-rating");
   button.removeEventListener("click", submitRating);
 
@@ -38,4 +42,6 @@ const submitRating = () => {
 
   ratingState.setAttribute("aria-hidden", true);
   thankYouState.setAttribute("aria-hidden", false);
+  ratingText = document.querySelector("span.user-rating");
+  ratingText.innerText = rating;
 };
