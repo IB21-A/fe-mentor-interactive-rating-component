@@ -118,12 +118,26 @@ body {
 /* Components */
 .rating-card {
   flex-direction: column;
-  background-color: black;
-  border: 1px solid white;
+  background: radial-gradient(
+    circle at top,
+    hsl(219, 23%, 19%) 0,
+    var(--clr-veryDarkBlue) 110%
+  );
+  /* border: 1px solid white; */
   border-radius: 1.5rem;
   padding: 2rem;
   width: 425px;
   height: 425px;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8rem 0;
+  letter-spacing: 0.125rem;
 }
 
 .round-container {
