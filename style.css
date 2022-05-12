@@ -129,7 +129,9 @@ body {
   width: 425px;
   height: 425px;
 }
-#thank-you-state {
+
+#rating-state[aria-hidden="true"],
+#thank-you-state[aria-hidden="true"] {
   display: none;
 }
 

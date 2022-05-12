@@ -21,7 +21,11 @@
   <body>
     <div class="wrapper flex">
       <!-- Rating state start -->
-      <div id="rating-state" class="rating-card flex space-between">
+      <div
+        id="rating-state"
+        class="rating-card flex space-between"
+        aria-hidden="false"
+      >
         <div class="round-container">
           <img src="/images/icon-star.svg" alt="star icon" />
         </div>
@@ -78,7 +82,11 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div id="thank-you-state" class="rating-card flex space-between">
+      <div
+        id="thank-you-state"
+        class="rating-card flex space-between"
+        aria-hidden="true"
+      >
         You selected
         <!-- Add rating here -->
         out of 5 Thank you! We appreciate you taking the time to give a rating.
