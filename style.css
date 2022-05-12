@@ -46,7 +46,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* A elements that don't have a class get default styles */
@@ -131,17 +131,21 @@ body {
     hsl(219, 23%, 19%) 0,
     var(--clr-veryDarkBlue) 110%
   );
-  /* border: 1px solid white; */
+
   border-radius: 1.5rem;
   padding: 2rem;
   width: min-content;
   min-width: 425px;
-  min-height: 425px;
+  min-height: 400px;
 }
 
 .rating-card > * {
   flex-direction: column;
   height: auto;
+}
+
+.rating-card h1 + p {
+  margin-top: 1rem;
 }
 
 #rating-state[aria-hidden="true"],
@@ -155,8 +159,12 @@ body {
 
 #thank-you-state {
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 1.5rem;
   width: 425px;
+}
+
+#thank-you-state img {
+  width: auto;
 }
 
 .btn-primary {
