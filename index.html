@@ -20,9 +20,8 @@
   </head>
   <body>
     <div class="wrapper flex">
-      <div class="rating-card flex space-between">
-        <!-- Rating state start -->
-
+      <!-- Rating state start -->
+      <div id="rating-state" class="rating-card flex space-between">
         <div class="round-container">
           <img src="/images/icon-star.svg" alt="star icon" />
         </div>
@@ -72,18 +71,21 @@
             5
           </div>
         </div>
-        <button tabindex="0" class="btn-primary">Submit</button>
-        <div class="hidden">
-          <!-- Rating state end -->
-          <!-- Thank you state start -->
-          You selected
-          <!-- Add rating here -->
-          out of 5 Thank you! We appreciate you taking the time to give a
-          rating. If you ever need more support, don’t hesitate to get in touch!
-          <!-- Thank you state end -->
-        </div>
+        <button id="submit-rating" tabindex="0" class="btn-primary">
+          Submit
+        </button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div id="thank-you-state" class="rating-card flex space-between">
+        You selected
+        <!-- Add rating here -->
+        out of 5 Thank you! We appreciate you taking the time to give a rating.
+        If you ever need more support, don’t hesitate to get in touch!
       </div>
     </div>
+    <!-- Thank you state end -->
 
     <div class="attribution text-light-grey">
       Challenge by

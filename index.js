@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  initializeButtons();
+});
+
+const initializeButtons = () => {
+  initalizeRatingButtons();
+  initalizeSubmitButton();
+};
+
+const initalizeRatingButtons = () => {
   let ratingButtons = document.querySelectorAll(".rating-number");
 
   const resetButtons = (ratingButtons) => {
@@ -13,4 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
       button.setAttribute("aria-selected", "true");
     });
   });
-});
+};
+const initalizeSubmitButton = () => {};

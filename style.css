@@ -129,6 +129,9 @@ body {
   width: 425px;
   height: 425px;
 }
+#thank-you-state {
+  display: none;
+}
 
 .btn-primary {
   background-color: var(--clr-primary);
