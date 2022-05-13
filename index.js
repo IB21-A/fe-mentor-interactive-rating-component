@@ -1,4 +1,4 @@
-let rating;
+let rating = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeButtons();
@@ -21,10 +21,20 @@ const initalizeRatingButtons = () => {
   ratingButtons.forEach((button) => {
     button.addEventListener("click", () => {
       resetButtons(ratingButtons);
-      button.setAttribute("aria-selected", "true");
-      rating = button.getAttribute("data-value");
+      handleRatingButtonClick(button);
+    });
+    button.addEventListener("keyup", (e) => {
+      if (e.keyCode === 13 || e.keyCode === 32) {
+        resetButtons(ratingButtons);
+        handleRatingButtonClick(button);
+      }
     });
   });
+};
+
+const handleRatingButtonClick = (button) => {
+  button.setAttribute("aria-selected", "true");
+  rating = button.getAttribute("data-value");
 };
 
 const initalizeSubmitButton = () => {
