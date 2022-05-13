@@ -31,7 +31,7 @@ The demo image shows the 4 being selected (light grey color) and the 5 being hov
 
 ### Links
 
-- Live Site URL: [http://www.thomcodes.com/fe-mentor-interactive-rating-component/](http://www.thomcodes.com/fe-mentor-interactive-rating-component/)
+- Live Site URL: [https://www.thomcodes.com/fe-mentor-interactive-rating-component/](http://www.thomcodes.com/fe-mentor-interactive-rating-component/)
 
 ## My process
 
